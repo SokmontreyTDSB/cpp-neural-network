@@ -20,6 +20,11 @@ class Matrix{
 		Matrix(int rows, int cols, vector<vector<double>> matrix);
 		~Matrix();
 
+		reshape(int rows, int cols);
+		reshape(int rows, int cols, double value);
+		reshape(int rows, int cols, double min, double max, double seed);
+		reshape(int rows, int cols, double min, double max);
+
 		double& operator()(int row, int col);
 
 		/*__scalar_operator__*/
